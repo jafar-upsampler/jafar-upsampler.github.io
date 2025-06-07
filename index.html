@@ -197,8 +197,17 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            <!--Foundation models have emerged as powerful tools across various domains including language, vision, and multimodal tasks. While prior works have addressed unsupervised image segmentation, they significantly lag behind supervised models. In this paper, we use a diffusion UNet encoder as a foundation vision encoder and introduce DiffCut, an unsupervised zero-shot segmentation method that solely harnesses the output features from the final self-attention block. Through extensive experimentation, we demonstrate that the utilization of these diffusion features in a graph based segmentation algorithm, significantly outperforms previous state-of-the-art methods on zero-shot segmentation.
-            Specifically, we leverage a <i>recursive Normalized Cut</i> algorithm that softly regulates the granularity of detected objects and produces well-defined segmentation maps that precisely capture intricate image details. Our work highlights the remarkably accurate semantic knowledge embedded within diffusion UNet encoders that could then serve as foundation vision encoders for downstream tasks.-->
+            Foundation Vision Encoders have become essential for a wide range of dense vision tasks. 
+            However, their low-resolution spatial feature outputs necessitate feature upsampling to produce 
+            the high-resolution modalities required for downstream tasks. In this work, we introduce JAFAR—a 
+            lightweight and flexible feature upsampler that enhances the spatial resolution of visual features 
+            from any Foundation Vision Encoder to an arbitrary target resolution. JAFAR employs an attention-based 
+            module designed to promote semantic alignment between high-resolution queries—derived from low-level 
+            image features—and semantically enriched low-resolution keys, using Spatial Feature Transform (SFT) 
+            modulation. Notably, despite the absence of high-resolution supervision, we demonstrate that learning 
+            at low upsampling ratios and resolutions generalizes remarkably well to significantly higher output scales. 
+            Extensive experiments show that JAFAR effectively recovers fine-grained spatial details and consistently 
+            outperforms existing feature upsampling methods across a diverse set of downstream tasks.
           </p>
         </div>
       </div>
