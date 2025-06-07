@@ -74,7 +74,7 @@
               <span class="author-block">
                 <a href="https://loickch.github.io"> Loïck Chambon</a><sup>1,3</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=fKlo-lUAAAAJ&hl=en"> Louis Serrano</a><sup>1</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=fKlo-lUAAAAJ&hl=en"> Louis Serrano</a><sup>1</sup>,</span><br>
               <span class="author-block">
                 <a href="https://fr.linkedin.com/in/jean-emmanuel-haugeard" target="_blank">Jean-Emmanuel Haugeard</a><sup>2</sup>,</span>
               <span class="author-block">
@@ -108,7 +108,7 @@
                          
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2406.02842v2" target="_blank"
+                  <a href="" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -119,7 +119,7 @@
 
                 <!-- pdf link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2406.02842v2" target="_blank"
+                  <a href="" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
@@ -130,7 +130,7 @@
                 
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://github.com/PaulCouairon/DiffCut" target="_blank"
+                  <a href="" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fab fa-github"></i>
@@ -179,10 +179,10 @@
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video> !-->
-      <img src="static/images/main_figure.png">
+      <img src="">
       <h2 class="subtitle has-text-centered">
-        Our <b>DiffCut</b> method exploits features from a diffusion UNet encoder in a graph-based <i>recursive</i> partitioning algorithm. Compared to DiffSeg,
-        DiffCut provides finely detailed segmentation maps that more closely align with semantic concepts.
+        <!--Our <b>DiffCut</b> method exploits features from a diffusion UNet encoder in a graph-based <i>recursive</i> partitioning algorithm. Compared to DiffSeg,
+        DiffCut provides finely detailed segmentation maps that more closely align with semantic concepts.-->
       </h2>
     </div>
   </div>
@@ -197,8 +197,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Foundation models have emerged as powerful tools across various domains including language, vision, and multimodal tasks. While prior works have addressed unsupervised image segmentation, they significantly lag behind supervised models. In this paper, we use a diffusion UNet encoder as a foundation vision encoder and introduce DiffCut, an unsupervised zero-shot segmentation method that solely harnesses the output features from the final self-attention block. Through extensive experimentation, we demonstrate that the utilization of these diffusion features in a graph based segmentation algorithm, significantly outperforms previous state-of-the-art methods on zero-shot segmentation.
-            Specifically, we leverage a <i>recursive Normalized Cut</i> algorithm that softly regulates the granularity of detected objects and produces well-defined segmentation maps that precisely capture intricate image details. Our work highlights the remarkably accurate semantic knowledge embedded within diffusion UNet encoders that could then serve as foundation vision encoders for downstream tasks.
+            <!--Foundation models have emerged as powerful tools across various domains including language, vision, and multimodal tasks. While prior works have addressed unsupervised image segmentation, they significantly lag behind supervised models. In this paper, we use a diffusion UNet encoder as a foundation vision encoder and introduce DiffCut, an unsupervised zero-shot segmentation method that solely harnesses the output features from the final self-attention block. Through extensive experimentation, we demonstrate that the utilization of these diffusion features in a graph based segmentation algorithm, significantly outperforms previous state-of-the-art methods on zero-shot segmentation.
+            Specifically, we leverage a <i>recursive Normalized Cut</i> algorithm that softly regulates the granularity of detected objects and produces well-defined segmentation maps that precisely capture intricate image details. Our work highlights the remarkably accurate semantic knowledge embedded within diffusion UNet encoders that could then serve as foundation vision encoders for downstream tasks.-->
           </p>
         </div>
       </div>
@@ -217,7 +217,7 @@
             </p>
       </div>
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/images/comparison.mp4"
+        <source src=""
         type="video/mp4">
       </video>
       </div>
@@ -232,19 +232,19 @@
   <div class = "container is-max-desktop">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Semantic Coherence in Vision Encoders</h2>
+      <h2 class="title is-3"><!--Semantic Coherence in Vision Encoders--></h2>
       <div class="level-set has-text-justified">
             <p>
-              As good candidates for a task of unsupervised segmentation are expected to be semantically coherent, we conduct a comparison between different families of foundation models on their internal alignment at the patch-level. 
-              Selected models include text-to-image DMs (SSD-1B), text-aligned contrastive models (CLIP, SigLIP) and self-supervised models (DINO, DINOv2).<br><br>
+              <!--As good candidates for a task of unsupervised segmentation are expected to be semantically coherent, we conduct a comparison between different families of foundation models on their internal alignment at the patch-level. 
+              Selected models include text-to-image DMs (SSD-1B), text-aligned contrastive models (CLIP, SigLIP) and self-supervised models (DINO, DINOv2).--><br><br>
             </p>
       </div>
-      <img src="static/images/semantic_coherence.png" alt="key observation" class="center-image">
+      <img src="" alt="key observation" class="center-image">
       <h3>
-        <b>Qualitative results on the semantic coherence of various vision encoders.</b> We select a patch (red marker) associated to the dog in <b><span class="small-caps">Ref. Image</span></b>. Top row shows the cosine similarity heatmap between the selected patch and all patches produced by vision encoders for <b><span class="small-caps">Ref. Image</span></b>. Bottom row shows the heatmap between the selected patch in <b><span class="small-caps">Ref. Image</span></b> and all patches produced by vision encoders for <b><span class="small-caps">Target. Image</span></b>.
+        <b><!--Qualitative results on the semantic coherence of various vision encoders.</b> We select a patch (red marker) associated to the dog in <b><span class="small-caps">Ref. Image</span></b>. Top row shows the cosine similarity heatmap between the selected patch and all patches produced by vision encoders for <b><span class="small-caps">Ref. Image</span></b>. Bottom row shows the heatmap between the selected patch in <b><span class="small-caps">Ref. Image</span></b> and all patches produced by vision encoders for <b><span class="small-caps">Target. Image</span>--></b>.
       </h3><br>
       <p>
-      We observe that SSD-1B UNet encoder exhibits a greater patch-level alignment than any other candidate model. Deriving from this observation, we assume that a graph-based partitioning algorithm would yield sharp image segments, each corresponding to a precise semantic concept as distinct objects would manifest as weakly connected components in a patch similarity matrix.
+      <!--We observe that SSD-1B UNet encoder exhibits a greater patch-level alignment than any other candidate model. Deriving from this observation, we assume that a graph-based partitioning algorithm would yield sharp image segments, each corresponding to a precise semantic concept as distinct objects would manifest as weakly connected components in a patch similarity matrix.-->
       </p>
       </div>
   </div>
@@ -257,17 +257,17 @@
   <div class = "container is-max-desktop">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Recursive Normalized Cut</h2>
+      <h2 class="title is-3"><!--Recursive Normalized Cut--></h2>
       <div class="level-set has-text-justified">
             <p>
-              In this work, we approach image segmentation as a graph partitioning problem. To allow the segmentation of an arbitrary number of objects, we adopt a recursive normalized cut strategy. 
+              <!--In this work, we approach image segmentation as a graph partitioning problem. To allow the segmentation of an arbitrary number of objects, we adopt a recursive normalized cut strategy. 
               First, we extract image features using the diffusion UNet encoder, and then compute an affinity matrix (not shown below). We then apply a single step of the Normalized Cut algorithm to split the graph into two parts. 
               The NCut value, which measures the partitioning cost, is compared to a hyperparameter, \( \tau \) that sets the maximum allowed cost for further partitioning. If this value is below \( \tau \), the partitioning continues recursively on one of the branches. 
-              When it exceeds \( \tau \), we register the most recent segment with an NCut value below \( \tau \) as a cluster, and then proceed to partition another branch of the graph.
+              When it exceeds \( \tau \), we register the most recent segment with an NCut value below \( \tau \) as a cluster, and then proceed to partition another branch of the graph.-->
             </p>
       </div>
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/images/recursive_cut.mp4"
+        <source src=""
         type="video/mp4">
       </video>
       </div>
@@ -281,9 +281,9 @@
   <div class = "container is-max-desktop">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">DiffCut Pipeline</h2>
+      <h2 class="title is-3"><!--DiffCut Pipeline--></h2>
       <img src="static/images/diffcut.png" alt="diffcut pipeline"/> <br><br>
-      <b>Overview of DiffCut.</b> <b>1)</b> DiffCut takes an image as input and extracts the features of the last self-attention block of a diffusion UNet encoder. <b>2)</b> These features are used to construct an affinity matrix that serves in a <i>recursive normalized cut</i> algorithm, which outputs a segmentation map at the latent spatial resolution. <b>3)</b> A high-resolution segmentation map is produced via a concept assignment mechanism on the features upsampled at the original image size. 
+      <b><!--Overview of DiffCut.</b> <b>1)</b> DiffCut takes an image as input and extracts the features of the last self-attention block of a diffusion UNet encoder. <b>2)</b> These features are used to construct an affinity matrix that serves in a <i>recursive normalized cut</i> algorithm, which outputs a segmentation map at the latent spatial resolution. <b>3)</b> A high-resolution segmentation map is produced via a concept assignment mechanism on the features upsampled at the original image size.-->
       </div>
   </div>
 </div>
@@ -295,9 +295,9 @@
   <div class = "container is-max-desktop">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Zero-Shot Segmentation Results</h2>
+      <h2 class="title is-3"><!--Zero-Shot Segmentation Results--></h2>
       <!--Here we provide qualitative zero-shot segmentation results. For more analysis, please refer to the paper.<br><br>-->
-      <img src="static/images/quali_fig_coco.png" alt="unsupervised results"/>
+      <img src="" alt="unsupervised results"/>
       <!--<h2 class="subtitle has-text-centered">
           Visualization of unsupervised semantic segmentation.
         </h2>!-->
@@ -314,14 +314,14 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-        @inproceedings{
+        <!--@inproceedings{
           couairon2024diffcut,
           title={DiffCut: Catalyzing Zero-Shot Semantic Segmentation with Diffusion Features and Recursive Normalized Cut},
           author={Paul Couairon and Mustafa Shukor and Jean-Emmanuel HAUGEARD and Matthieu Cord and Nicolas THOME},
           booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
           year={2024},
           url={https://openreview.net/forum?id=N0xNf9Qqmc}
-          }
+      }-->
 </code></pre>
     </div>
 </section>
