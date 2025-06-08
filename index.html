@@ -289,9 +289,9 @@
   <div class = "container is-max-desktop">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3"><!--DiffCut Pipeline--></h2>
-      <img src="static/images/diffcut.png" alt="diffcut pipeline"/> <br><br>
-      <b><!--Overview of DiffCut.</b> <b>1)</b> DiffCut takes an image as input and extracts the features of the last self-attention block of a diffusion UNet encoder. <b>2)</b> These features are used to construct an affinity matrix that serves in a <i>recursive normalized cut</i> algorithm, which outputs a segmentation map at the latent spatial resolution. <b>3)</b> A high-resolution segmentation map is produced via a concept assignment mechanism on the features upsampled at the original image size.-->
+      <h2 class="title is-3">JAFAR Architecture</h2>
+      <img src="static/images/JAFAR.png" alt="jafar architecture"/> <br><br>
+      <b>Overview of JAFAR.</b> To construct the upsampling kernel, queries and keys are derived from a shared image representation. Queries are downsampled to match the target output resolution, while keys are downsampled to align with the spatial resolution of the vision encoder’s features. Keys are then semantically enriched via SFT modulation to promote semantic alignment between queries and keys. The resulting kernel is then used to interpolate features from the foundation vision encoder.
       </div>
   </div>
 </div>
@@ -303,12 +303,14 @@
   <div class = "container is-max-desktop">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3"><!--Zero-Shot Segmentation Results--></h2>
+      <h2 class="title is-3">Features Visualization.</h2>
       <!--Here we provide qualitative zero-shot segmentation results. For more analysis, please refer to the paper.<br><br>-->
-      <img src="" alt="unsupervised results"/>
-      <!--<h2 class="subtitle has-text-centered">
-          Visualization of unsupervised semantic segmentation.
-        </h2>!-->
+      <img src="static/images/features_supp.png" alt="unsupervised results"/>
+      <h2 class="subtitle has-text-centered">
+        DINOv2 ViT-S/14 features at 32 × 32 resolution from the ImageNet validation set are upsampled to 448 × 448. Baseline methods—whether training-free, 
+        task-dependent, or task-agnostic—introduce varying levels of blurriness and artifacts. Besides being 
+        task-agnostic, JAFAR produces sharp, content-aware feature maps with fewer artifacts.
+        </h2>
       </div>
   </div>
 </div>
