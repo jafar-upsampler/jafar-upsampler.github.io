@@ -291,7 +291,9 @@
     <div class="container">
       <h2 class="title is-3">JAFAR Architecture</h2>
       <img src="static/images/JAFAR.png" alt="jafar architecture"/> <br><br>
+      <div class="level-set has-text-justified">
       <b>Overview of JAFAR.</b> To construct the upsampling kernel, queries and keys are derived from a shared image representation. Queries are downsampled to match the target output resolution, while keys are downsampled to align with the spatial resolution of the vision encoder’s features. Keys are then semantically enriched via SFT modulation to promote semantic alignment between queries and keys. The resulting kernel is then used to interpolate features from the foundation vision encoder.
+      </div>
       </div>
   </div>
 </div>
@@ -306,9 +308,11 @@
       <h2 class="title is-3">Features Visualization</h2>
       <!--Here we provide qualitative zero-shot segmentation results. For more analysis, please refer to the paper.<br><br>-->
       <img src="static/images/features_supp.png" alt="unsupervised results"/>
+      <div class="level-set has-text-justified">
         DINOv2 ViT-S/14 features at 32 × 32 resolution from the ImageNet validation set are upsampled to 448 × 448. Baseline methods—whether training-free, 
         task-dependent, or task-agnostic—introduce varying levels of blurriness and artifacts. Besides being 
         task-agnostic, JAFAR produces sharp, content-aware feature maps with fewer artifacts.
+      </div>
       </div>
   </div>
 </div>
